@@ -2,7 +2,7 @@
 
 int score; //int variable named score that will store the score value entered by the user. Int is used for this variable instead of float because the score can't be a decimal in the NFL
 
-void possible_scoring_combos(score){ //function that finds all the possible scoring combinations and takes in score as a parameter
+void possible_scoring_combos(int score){ //function that finds all the possible scoring combinations and takes in score as a parameter
     for(int td_and_2pt = 0; td_and_2pt * 8 <= score; td_and_2pt++){ //for loop that defines the td_and_2pt integer as a starting value of 0. As the test case, multiplies the td_and_2pt value by 8 so long as it doesn't exceed the score variable, and increases the value of td_and_2pt by 1, every time the test is successful
         for(int td_and_pat = 0; td_and_pat*7 + td_and_2pt*8 <= score; td_and_pat++){ //for loop that defines the td_and_pat integer as a starting value of 0. As the test case, multiplies the td_and_pat value by 7 and td_and_2pt value by 8 so long as it doesn't exceed the score variable, and increases the value of td_and_pat by 1, every time the test is successful
             for(int td = 0; td*6 + td_and_pat*7 + td_and_2pt*8 <= score; td++){ //for loop that defines the td integer as a starting value of 0. As the test case, multiplies the td value by 6, td_and_pat value by 7, and td_and_2pt value by 8 so long as it doesn't exceed the score variable, and increases the value of td by 1, every time the test is successful
