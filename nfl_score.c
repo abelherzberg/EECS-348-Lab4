@@ -20,7 +20,7 @@ void possible_scoring_combos(int score){ //function that finds all the possible 
 
 int main(){ //main function
     while(1){ //while loop that continues infinitely, since 1 equals to true, and while(1) means it will run while stil true. The only way to stop it is with a break, which we will use if the user inputs an invalid score
-        printf("Enter 0 or 1 to STOP"); //print statement that tells the user how to stop the program
+        printf("Enter 0 or 1 to STOP \n"); //print statement that tells the user how to stop the program
         printf("Enter a score: "); //print statement that asks the user to enter a score
         scanf("%d", &score); //stores the value ented by the user as the score variable defined at the beginning of the code
 
